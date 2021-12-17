@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 01</title>
+</head>
+<body>
+<script>
+    let mycolor=["Red","Green","White","Black"];
+    document.write(mycolor.toString());//cách 1 dùng toString trong đó toString() là một phương thức của đối tượng Number trong JavaScript, có tác dụng lấy chuỗi đại diện của một số với cơ số được chỉ định (ví dụ như cơ số 2, cơ số 10 v.v..). Với cùng một số thì phương thức toString() sẽ cho ra các kết quả là các chuỗi khác nhau, tùy thuộc vào cơ số được dùng.
+    document.write(mycolor.join());// cách 2 dùng join: Hàm join sẽ nối các phần tử của mảng thành một chuỗi, các phần tử được ngăn cách nhau bởi kí tự do người dùng quy định. Nếu không truyền ký tự ngăn cách vào thì giá trị mặc định là dấu phẩy ",".
+    document.write(mycolor.join('+'))// cách 3 có thể thay thế mặc định dấu (,) trong hàm join bằng dấu (+) như cách 3
+</script>
+</body>
+</html>

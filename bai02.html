@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 02</title>
+</head>
+<body>
+<script>
+    let num=prompt("Nhap so vao day");
+
+    let str=num.toString();// vì num là các số nhập từ bàn phím vd nhập 1,2,3,4,5 thì num=[1,2,3,4,5] (toString chó chú thích ở bài 1)
+    let result=[str[0]];
+    for (let x=1; x<str.length;x++){
+        if ((str[x-1]%2===0)&&(str[x]%2===0)){// xét hai số liền nhau có chia hết choa hai ko, duyệt cho đến cuối mảng(x-1 và x là hai số liền nhau)
+            result.push("-",str[x]);
+        }
+        else {
+            result.push(str[x]);
+        }
+    }
+    document.write(result.join(''));
+</script>
+</body>
+</html>

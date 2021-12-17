@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 03</title>
+</head>
+<body>
+<script>
+    let str = 'c';
+    let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';//so str với bảng chữ cái
+    let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];// khai báo result là một mảng rỗng để chứa str mới
+
+    for(let x=0; x<str.length; x++)
+    {
+        if(UPPER.indexOf(str[x]) !== -1)//so sánh lần lượt chữ cái trong str với bảng chữ cái UPPER nếu đúng thì chuyển thành viết thường
+        {
+            result.push(str[x].toLowerCase());//tolowerCase có nghĩa là viết thường
+        }
+        else if(LOWER.indexOf(str[x]) !== -1)//so sánh lần lượt chữ cái trong str với bảng chữ cái UPPER nếu đúng thì chuyển thành viết hao
+        {
+            result.push(str[x].toUpperCase());// toUpperCase có ngĩa là viết hoa
+        }// push ở đây có ngĩa là thêm giá trị str vào trong mảng rỗng result đã khai báo ở trên
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(''));
+
+</script>
+</body>
+</html>
